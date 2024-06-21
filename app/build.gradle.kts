@@ -62,10 +62,11 @@ dependencies {
     /**
      * Manejo de imagenes
      */
-
+    implementation("io.coil-kt:coil-compose:2.6.0")
     /**
      * reconocimiento de imagenes
      */
+    implementation("com.google.android.gms:play-services-mlkit-text-recognition:19.0.0")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
