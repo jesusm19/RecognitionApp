@@ -41,8 +41,8 @@ fun TabsView(scannerViewModel: ScannerViewModel) {
             }
         }
         when(selectedTab) {
-            0 -> GalleryView(scannerViewModel)
-            1 -> CameraView(scannerViewModel)
+            0 -> GalleryView(scannerViewModel).apply { scannerViewModel.cleanText() }
+            1 -> CameraView(scannerViewModel).apply { scannerViewModel.cleanText() }
             2 -> CollectionGalleryView()
         }
 
